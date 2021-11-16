@@ -1,0 +1,137 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    color: white ;
+}
+body {
+    background-image: url(https://miro.medium.com/max/1400/1*S8UogculWFLr3lVdLn05MA.jpeg);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    width: 95%;
+    justify-content: space-between;
+    flex-direction: row;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.logo {
+    height: 70px;
+    width: 70px;
+    border-radius: 50px;
+}
+.logo-name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 30px;
+}
+.logo-name > img, .logo-name > p {
+    margin: 5px;
+    cursor: pointer;
+}
+.logo-name > p {
+    font-family: 'Estonia', cursive;
+    font-size: 40px;
+    color: #88E0EF;
+}
+.nav-bar {
+    float: right;
+    justify-content: end;
+}
+
+.nav-bar > a {
+    text-decoration: none;
+    color: white;
+    margin: 0px 40px;
+    padding: 5px;
+}
+.nav-bar > a:hover {
+    color: #2F86A6 ;
+}
+.shop-logo {
+    height: 70px;
+    width: 70px;
+    border-radius: 50px;
+    cursor: pointer;
+    float: right;
+}
+.discri {
+    margin: 50px;
+    font-size: larger;
+    font-family: 'Rajdhani', sans-serif;
+}
+.buttons {
+    padding: 20px;
+    margin: 10px 20px;
+    font-family: inherit;
+    font-size: 20px;
+}
+.but1, .but2 {
+    padding: 20px;
+    margin: 25px;
+    border: 3px solid #6166B3;
+    font-size: larger;
+    border-radius: 5px 20px;
+    cursor: pointer;
+}
+.but1 {
+    background-color: transparent;
+}
+.but2 {
+    background-color: #32C1CD;
+}
+main {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    
+}
+.laptop-img {
+    height: 450px;
+    width: 450px;
+    margin-right: 50px;
+    animation: entry 2.5s ease-in;
+}
+
+@keyframes entry {
+    0% {
+        opacity: 0;
+        transform: translate(100px);
+    }
+    100% {
+		opacity: 1;
+		transform: translate(0px);
+	}
+}
+@media screen and (max-width: 1024px) {
+	.main > div {
+		flex-direction: column;
+	}
+	.discri {
+		margin-top: 5vh;
+		text-align: center;
+	}
+	.discri > h1 {
+		font-size: 30px;
+	}
+	.discri > h4 {
+		font-size: 18px;
+	}
+	.buttons {
+		padding: 10px 0px 0px 0px;
+	}
+	.laptop-select {
+		bottom: 5%;
+		right: 50%;
+		width: 50%;
+		transform: translate(50%, 5%);
+	}
+	.laptop-img {
+		height: 80%;
+	}
+	
+}
